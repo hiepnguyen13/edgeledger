@@ -1,0 +1,175 @@
+/* Text colors */
+.text--primary {
+  color: #28a745;
+}
+
+.text--secondary {
+  color: #0284d0;
+}
+
+/* Background colors */
+.bg--primary {
+  background: #28a745;
+  color: #fff;
+}
+
+.bg--secondary {
+  background: #0284d0;
+  color: #fff;
+}
+
+.bg--dark {
+  background: #333;
+  color: #fff;
+}
+
+.bg--light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Button */
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn--primary {
+  color: #fff;
+  background: #28a745;
+}
+
+.btn--secondary {
+  color: #fff;
+  background: #0284d0;
+}
+
+.btn--dark {
+  color: #fff;
+  background: #333;
+}
+
+.btn--light {
+  color: #333;
+  background: #f4f4f4;
+}
+
+.btn--outline {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+/* Display Flex */
+.flex__items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .flex__items {
+    flex-direction: column;
+  }
+}
+
+.flex__item {
+  width: 100%;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-reverse {
+  flex-direction: row-reverse;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .col {
+    flex: 100%;
+    /* max-width: 100%; */
+  }
+}
+
+.col > div {
+  height: 100%;
+}
+
+.col + .col > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 30px;
+}
+
+.col img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.col h2 {
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.col h4 {
+  margin-bottom: 10px;
+}
+
+.col p {
+  margin: 20px 0;
+}
+
+.section-header {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.section-padding {
+  padding: 20px 20px 40px;
+}
+
+.flex-grid .row {
+  padding: 0 4px;
+}
+
+.flex-grid .column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+@media (max-width: 768px) {
+  .flex-grid .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.section-header h2 {
+  font-size: 40px;
+  margin: 20px 0;
+}
